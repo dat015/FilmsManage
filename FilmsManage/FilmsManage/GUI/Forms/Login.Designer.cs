@@ -31,8 +31,6 @@ namespace FilmsManage
             components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -48,13 +46,14 @@ namespace FilmsManage
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(components);
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             btn_Login = new Guna.UI2.WinForms.Guna2Button();
             label1 = new Label();
             cbPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -62,6 +61,7 @@ namespace FilmsManage
             guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(components);
             guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(components);
+            txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             guna2Panel1.SuspendLayout();
@@ -82,10 +82,10 @@ namespace FilmsManage
             // guna2Panel2
             // 
             guna2Panel2.BackColor = Color.FromArgb(0, 9, 43);
+            guna2Panel2.Controls.Add(txtPassword);
             guna2Panel2.Controls.Add(btn_Login);
             guna2Panel2.Controls.Add(label1);
             guna2Panel2.Controls.Add(cbPassword);
-            guna2Panel2.Controls.Add(txtPassword);
             guna2Panel2.Controls.Add(txtUsername);
             guna2Panel2.Controls.Add(guna2PictureBox1);
             guna2Panel2.CustomizableEdges = customizableEdges11;
@@ -102,7 +102,7 @@ namespace FilmsManage
             btn_Login.Animated = true;
             btn_Login.BackColor = Color.Transparent;
             btn_Login.BorderRadius = 10;
-            btn_Login.CustomizableEdges = customizableEdges1;
+            btn_Login.CustomizableEdges = customizableEdges3;
             btn_Login.FillColor = Color.FromArgb(193, 20, 137);
             btn_Login.Font = new Font("Segoe UI", 9F);
             btn_Login.ForeColor = Color.White;
@@ -110,7 +110,7 @@ namespace FilmsManage
             btn_Login.Location = new Point(59, 372);
             btn_Login.Margin = new Padding(4, 5, 4, 5);
             btn_Login.Name = "btn_Login";
-            btn_Login.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btn_Login.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btn_Login.Size = new Size(335, 60);
             btn_Login.TabIndex = 6;
             btn_Login.Text = "Đăng nhập";
@@ -136,11 +136,11 @@ namespace FilmsManage
             cbPassword.CheckedState.FillColor = Color.FromArgb(234, 153, 149);
             cbPassword.CheckedState.InnerBorderColor = Color.FromArgb(218, 1, 88);
             cbPassword.CheckedState.InnerColor = Color.FromArgb(0, 9, 43);
-            cbPassword.CustomizableEdges = customizableEdges3;
+            cbPassword.CustomizableEdges = customizableEdges5;
             cbPassword.Location = new Point(59, 305);
             cbPassword.Margin = new Padding(4, 5, 4, 5);
             cbPassword.Name = "cbPassword";
-            cbPassword.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            cbPassword.ShadowDecoration.CustomizableEdges = customizableEdges6;
             cbPassword.Size = new Size(47, 31);
             cbPassword.TabIndex = 3;
             cbPassword.UncheckedState.BorderColor = Color.FromArgb(234, 153, 149);
@@ -149,33 +149,6 @@ namespace FilmsManage
             cbPassword.UncheckedState.InnerBorderColor = Color.FromArgb(234, 153, 149);
             cbPassword.UncheckedState.InnerColor = Color.FromArgb(234, 153, 149);
             cbPassword.CheckedChanged += cbPassword_CheckedChanged;
-            // 
-            // txtPassword
-            // 
-            txtPassword.Animated = true;
-            txtPassword.BorderColor = Color.FromArgb(234, 153, 149);
-            txtPassword.BorderRadius = 6;
-            txtPassword.Cursor = Cursors.IBeam;
-            txtPassword.CustomizableEdges = customizableEdges5;
-            txtPassword.DefaultText = "";
-            txtPassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtPassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtPassword.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtPassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtPassword.FillColor = Color.FromArgb(0, 9, 43);
-            txtPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPassword.Font = new Font("Segoe UI", 9F);
-            txtPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPassword.Location = new Point(59, 209);
-            txtPassword.Margin = new Padding(4, 6, 4, 6);
-            txtPassword.Name = "txtPassword";
-            txtPassword.PasswordChar = '●';
-            txtPassword.PlaceholderText = "Mật khẩu";
-            txtPassword.SelectedText = "";
-            txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtPassword.Size = new Size(335, 55);
-            txtPassword.TabIndex = 2;
-            txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUsername
             // 
@@ -273,6 +246,32 @@ namespace FilmsManage
             guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_VER_POSITIVE;
             guna2AnimateWindow1.TargetForm = this;
             // 
+            // txtPassword
+            // 
+            txtPassword.Animated = true;
+            txtPassword.BorderColor = Color.FromArgb(234, 153, 149);
+            txtPassword.BorderRadius = 6;
+            txtPassword.Cursor = Cursors.IBeam;
+            txtPassword.CustomizableEdges = customizableEdges1;
+            txtPassword.DefaultText = "";
+            txtPassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtPassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtPassword.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtPassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtPassword.FillColor = Color.FromArgb(0, 9, 43);
+            txtPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPassword.Font = new Font("Segoe UI", 9F);
+            txtPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPassword.Location = new Point(59, 202);
+            txtPassword.Margin = new Padding(4, 6, 4, 6);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '\0';
+            txtPassword.PlaceholderText = "Mật khẩu";
+            txtPassword.SelectedText = "";
+            txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtPassword.Size = new Size(335, 55);
+            txtPassword.TabIndex = 8;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -302,12 +301,12 @@ namespace FilmsManage
         private Guna.UI2.WinForms.Guna2Button btn_Login;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ToggleSwitch cbPassword;
-        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private Guna.UI2.WinForms.Guna2TextBox txtUsername;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2ControlBox clearButton;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
     }
 }

@@ -97,6 +97,7 @@ namespace FilmsManage
             registerForm.Show();
             this.Hide();
         }
+
         private void cbPassword_CheckedChanged(object sender, EventArgs e)
         {
             if (cbPassword.Checked)

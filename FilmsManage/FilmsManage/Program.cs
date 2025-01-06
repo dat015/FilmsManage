@@ -17,7 +17,7 @@ namespace FilmsManage
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             List<string> list = new List<string>();
-            Application.Run(new MainForm());
+            Application.Run(new Login());
         }
     }
 }

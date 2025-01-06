@@ -174,8 +174,8 @@ namespace FilmsManage.GUI.UserControls.Data
                         txtGhiChu.Text = phim.GhiChu;
                         txtNoiDung.Text = phim.NoiDung;
                         txtMovieLength.Text = phim.ThoiLuong.ToString();
-                        dateTimePicker1.Value = DateTime.Parse(phim.NgayKc.ToString());
-                        dateTimePicker2.Value = DateTime.Parse(phim.NgayKt.ToString());
+                        dtmMovieStart.Value = DateTime.Parse(phim.NgayKc.ToString());
+                        dtmMovieEnd.Value = DateTime.Parse(phim.NgayKt.ToString());
                         txtDoTuoi.Text = phim.DoTuoi.ToString();
                         txtMovieDirector.Text = phim.TenDaoDien;
                         ccbDangPhim.SelectedValue = phim.MaDangPhim;
