@@ -1,4 +1,4 @@
-# 🎬 PHẦN MỀM QUẢN LÝ RẠP CHIẾU PHIM - WinForms & SQL Server
+# 🎬 PHẦN MỀM QUẢN LÝ RẠP CHIẾU PHIM - .NET & WINFORM
 
 ## 1. Mô tả
 
